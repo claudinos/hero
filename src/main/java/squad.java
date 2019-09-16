@@ -16,16 +16,17 @@ import java.util.List;
             Hero=new ArrayList<hero>();
         }
 
-        public String getsquadName() {
+        public String getsquadname() {
 
             return squadName;
         }
-        public List<hero> getHero(){
+        public List<hero> gethero(){
             return Hero;
         }
-        public String squadCause() {
+        public String squadcause() {
             return squadCause;
         }
+
 
     }
 
