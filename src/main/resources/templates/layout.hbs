@@ -9,9 +9,20 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>{{#block "title"}} hero-squad{{/block}}</title>
         <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
+    <header>
+        <hr class="nav-hr">
+{{!--         <a href="/"><img src="/Images/img1"></a> --}}
+        <nav>
+          <ul>
+            <a href="/"><li>Home</li></a>
+            <a href="/hero"><li>Hero</li></a>
+            <a href="/squad"><li>Squad</li></a>
+          </ul>
+        </nav>
+      </header>
         {{/block}}
         <div class="page">
         {{#block "content"}}

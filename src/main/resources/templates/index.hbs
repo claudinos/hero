@@ -1,20 +1,13 @@
+{{#partial "title"}}
+
+{{/partial}}
+
 {{#partial "content"}}
 
-    <h1>Post list!</h1>
-
-    {{#if posts}} <!--if posts exist, then -->
-    {{#each posts }} <!--loop-->
-    <p>Current post:</p>
-    <p>{{ content }}</p> <!--show-->
-    {{/each}}
-    {{else}} <!--no posts!-->
-    <p>No posts!</p>
-    {{/if}}
-
-    <p>Add a new squad</p>
 
     <form class="form" action="/squad/new" method="post">
-                    <label for="content">squadName</label>
+                    <p>Add a new squad</p>
+                   <label for="content">squadName</label>
                    <input type="text" placeholder="Enter the squad name" name="squadName" required>
                    <label for="content">Size</label>
                    <input type="number" placeholder="Enter the max size" name="size" required>
