@@ -25,10 +25,12 @@ public class hero {
     }
 
     public String getheroPower() {
+
         return heroPower;
     }
 
     public String getheroWeakness() {
+
         return heroWeakness;
     }
 
