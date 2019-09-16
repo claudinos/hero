@@ -1,26 +1,26 @@
-
+package models;
 
 import java.util.ArrayList;
 import java.util.List;
 
-    class squad {
+public class Squad {
         private String squadName;
         private  String squadCause;
         private int squadId;
-        private static ArrayList<squad >instance=new ArrayList<squad >();
-        private List<hero>Hero;
-        public squad (String name, String cause) {
+        private static ArrayList<Squad > instance=new ArrayList<Squad >();
+        private List<Hero> Hero;
+        public Squad (String name, String cause) {
             squadName=name;
             squadCause=cause;
             instance.add(this);
-            Hero=new ArrayList<hero>();
+            Hero=new ArrayList<Hero>();
         }
 
         public String getsquadname() {
 
             return squadName;
         }
-        public List<hero> gethero(){
+        public List<Hero> gethero(){
             return Hero;
         }
         public String squadcause() {
@@ -29,5 +29,7 @@ import java.util.List;
 
 
     }
+
+
 
 

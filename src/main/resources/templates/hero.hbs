@@ -5,18 +5,18 @@
         </div>
         <div class="land-right">
         </div>
-        <h2> <a class="btns" href="/hero-form" >Create Your Hero</a> <br><br> CURRENT HEROES</h2>
+        <h2> <a class="btns" href="/hero-form" >Create Your Hero</a> <br><br> </h2>
         <div class="heroes">
             {{#each hero}}
 
                 <div class="hero-item">
-                    <img src="/img/DIAMONDHEAD06_4C.png" alt="">
+
                     <p>Name: {{ name }} </p>
                     <p>Age: {{ age }}</p>
                     <p>power: {{ power }}</p>
                     <p>Weakness: {{ weakness }}</p>
                     <p>Id: {{ id }}</p>
-                    <a href="new/{{id}}" class="btns">More....</a>
+{{!--                     <a href="new/{{id}}" class="btns">More....</a> --}}
 {{!--                     <a href="/squad" class="btns">Add {{ name }} To Squad</a> --}}
                 </div>
 

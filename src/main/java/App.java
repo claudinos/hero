@@ -2,6 +2,8 @@
 
 //import models.Hero;
 //import models.Squad;
+import models.Hero;
+import models.Squad;
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 
@@ -49,6 +51,31 @@ public class App {
             model.put("item",1);
             return new ModelAndView(model, "success.hbs");
         },new HandlebarsTemplateEngine());
+
+        post("/squad/new",(req,res)-> {
+            Map<String, Object> model = new HashMap<>();
+            String squadName = req.queryParams("squadName");
+            Integer size = Integer.parseInt(req.queryParams("size"));
+            String cause = req.queryParams("cause");
+            Squad newSquad = new Squad(squadName,cause);
+            req.session().attribute("item",squadName);
+            model.put("item",req.session().attribute("item"));
+            return new ModelAndView(model,"success.hbs");
+        }, new HandlebarsTemplateEngine());
+
+
+        post("/new/hero",(req, res) ->{
+            Map<String, Object> model = new HashMap<>();
+            String name = req.queryParams("name");
+            Integer age = Integer.parseInt(req.queryParams("age"));
+            String power = req.queryParams("power");
+            String weakness = req.queryParams("weakness");
+            Hero newHero = new Hero(name,age,power,weakness);
+            req.session().attribute("item",name);
+            model.put("item",req.session().attribute("item"));
+            model.put("newHero",newHero);
+            return new ModelAndView(model, "success.hbs");
+        }, new HandlebarsTemplateEngine());
 
     }
 }

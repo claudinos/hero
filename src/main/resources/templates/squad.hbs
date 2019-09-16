@@ -12,7 +12,7 @@
                    <h2> <a class="btns" href="/squad-form" ></h2>
             {{#each heroes}}
                  <div class="hero-item">
-                  <img src="/img/DIAMONDHEAD06_4C.png" alt="">
+
                   <div class="hero-detail">
                     <p>Name: {{name}}</p>
                     <p>Super power: {{ power }}</p>
@@ -21,9 +21,8 @@
                 </div>
             {{/each}}
             </div>
-            <h2>
-                <a class="btns" href="/squad-form">Create Your Squad</a>
-                <br><br>
+       <h2><a class="btns" href="/squad-form">Create Your Squad</a> </h2>
+
         {{#if squads}}
                 AVAILABLE SQUADS
             </h2>
@@ -52,7 +51,7 @@
             </div>
         {{/each}}
         {{else}}
-            <h2>Please create a squad to continue</h2>
+
         {{/if}}
         </div>
 
