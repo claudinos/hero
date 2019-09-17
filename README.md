@@ -22,12 +22,6 @@ This is an app that allows user to recruit a well-balanced team of superheroes. 
     
 
 ## BDD
-Main App screenshoot  
-<img src="photo/app.png">
-Encrypted  screenshoot  
-<img src="photo/encry.png">
-Decrypted  screenshoot
-<img src="photo/decry.png">
 
 
 ## Support and contact details
