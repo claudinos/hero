@@ -1,7 +1,4 @@
 
-
-//import models.Hero;
-//import models.Squad;
 import models.Hero;
 import models.Squad;
 import spark.ModelAndView;

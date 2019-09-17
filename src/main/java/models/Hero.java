@@ -10,7 +10,7 @@ import java.util.ArrayList;
         private int heroAge;
         private String heroPower;
         private String heroWeakness;
-
+        private int heroId;
         private static ArrayList<Hero> instance = new ArrayList<Hero>();
 
         public Hero(String name, int age, String power, String weakness) {
@@ -19,7 +19,7 @@ import java.util.ArrayList;
             heroPower = power;
             heroWeakness = weakness;
             instance.add(this);
-
+            heroId = instance.size();
         }
 
         public String getheroName() {

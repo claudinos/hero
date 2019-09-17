@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf911f14-d196-46a1-b90b-13caca9975ad" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Hero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Squad.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/public/css/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/hero.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/squad.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Hero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Hero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/hero-form.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/hero-form.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/hero.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/hero.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.hbs" afterDir="false" />
@@ -57,7 +56,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Maven.[Heroku,deploy]">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="App" />
       <module name="hero.main" />
@@ -132,5 +131,19 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/models/Hero.java</url>
+          <line>15</line>
+          <properties class="models.Hero" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
