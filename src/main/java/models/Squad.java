@@ -16,7 +16,11 @@ public class Squad {
             Hero=new ArrayList<Hero>();
         }
 
-        public String getsquadname() {
+    public static ArrayList<Squad> getAll() {
+            return instance;
+    }
+
+    public String getsquadname() {
 
             return squadName;
         }

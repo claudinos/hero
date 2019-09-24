@@ -17,6 +17,8 @@ public class App {
 
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
+           ArrayList< Squad> squads=Squad.getAll();
+           model.put("squads",squads);
             return new ModelAndView(model,"index.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -40,16 +42,15 @@ public class App {
             return new ModelAndView(model, "squad-form.hbs");
         }, new HandlebarsTemplateEngine());
 
-
         get("/new/member/:squadId",(req,res)->{
-            Map<String, Object> model = new HashMap<>();
+            Map<String, Object> model = new HashMap<>();git
             req.session().attribute("selectedSquad",req.params("squadId"));
             model.put("selectedSquad", req.session().attribute("selectedSquad"));
             model.put("item",1);
             return new ModelAndView(model, "success.hbs");
         },new HandlebarsTemplateEngine());
 
-        post("/squad/new",(req,res)-> {
+        post("/newsquad",(req,res)-> {
             Map<String, Object> model = new HashMap<>();
             String squadName = req.queryParams("squadName");
             Integer size = Integer.parseInt(req.queryParams("size"));
@@ -61,7 +62,8 @@ public class App {
         }, new HandlebarsTemplateEngine());
 
 
-        post("/new/hero",(req, res) ->{
+
+        post("/newhero",(req, res) ->{
             Map<String, Object> model = new HashMap<>();
             String name = req.queryParams("name");
             Integer age = Integer.parseInt(req.queryParams("age"));

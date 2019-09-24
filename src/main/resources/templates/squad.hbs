@@ -24,9 +24,10 @@
        <h2><a class="btns" href="/squad-form">Create Your Squad</a> </h2>
 
         {{#if squads}}
-                AVAILABLE SQUADS
-            </h2>
+
+
         {{#each squads}}
+          AVAILABLE SQUADS
             <div class="squad-cont">
                 <img src="" alt="">
                 <div>
@@ -51,7 +52,7 @@
             </div>
         {{/each}}
         {{else}}
-
+<h2>no squads</h2>
         {{/if}}
         </div>
 
